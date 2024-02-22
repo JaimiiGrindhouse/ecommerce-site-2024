@@ -1,7 +1,8 @@
 import Header from "./components/Header";
 import { Container } from "react-bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import Footer from "./components/Footer";
+import HomePage from "./pages/HomePage";
 
 import React from "react";
 
@@ -11,7 +12,7 @@ const App = () => {
       <Header />
       <main>
         <Container>
-          <h1>Pro Shop</h1>
+          <HomePage />
         </Container>
       </main>
       <Footer />
