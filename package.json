@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node --watch backend/index.js",
     "client": "npm start --prefix frontend",
-    "dev": "concurrently \"npm run start\" \"npm run client\"",
+    "dev": "concurrently \"npm run start\" \"npm run client\" --kill-others",
     "data:import": "node backend/seeder.js",
     "data:destroy": "node backend/seeder.js -d"
   },
